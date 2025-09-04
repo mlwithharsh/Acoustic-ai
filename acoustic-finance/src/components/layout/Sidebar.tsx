@@ -84,6 +84,38 @@ const Sidebar: React.FC<SidebarProps> = ({ mobileOpen, handleDrawerToggle, windo
           );
         })}
       </List>
+      {/* Google Login Button at the bottom */}
+      <Box sx={{ position: 'absolute', bottom: 24, left: 0, width: '100%', px: 2 }}>
+        <Divider sx={{ mb: 2 }} />
+        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <button
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              background: '#fff',
+              border: '1px solid #e0e0e0',
+              borderRadius: 24,
+              padding: '8px 24px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              cursor: 'pointer',
+              fontWeight: 500,
+              fontSize: 16,
+              color: '#4285F4',
+              transition: 'background 0.2s',
+            }}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" style={{ marginRight: 8 }}>
+              <g>
+                <path fill="#4285F4" d="M12 12.5v-2.5h7.5c0.2 1.1 0.2 2.2 0 3.3-0.3 1.3-1.1 2.5-2.1 3.3l-2.1-1.6c0.6-0.5 1.1-1.2 1.3-2h-4.6z"/>
+                <path fill="#34A853" d="M12 12.5v-2.5h-4.6c-0.2 0.8-0.2 1.7 0 2.5 0.3 1.3 1.1 2.5 2.1 3.3l2.1-1.6c-0.6-0.5-1.1-1.2-1.3-2h4.6z"/>
+                <path fill="#FBBC05" d="M12 12.5v-2.5h-4.6c-0.2 0.8-0.2 1.7 0 2.5 0.3 1.3 1.1 2.5 2.1 3.3l2.1-1.6c-0.6-0.5-1.1-1.2-1.3-2h4.6z"/>
+                <path fill="#EA4335" d="M12 12.5v-2.5h7.5c0.2 1.1 0.2 2.2 0 3.3-0.3 1.3-1.1 2.5-2.1 3.3l-2.1-1.6c0.6-0.5 1.1-1.2 1.3-2h-4.6z"/>
+              </g>
+            </svg>
+            Login with Google
+          </button>
+        </Box>
+      </Box>
     </div>
   );
 
